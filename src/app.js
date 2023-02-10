@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
-// import { addExpense } from './actions/expenses';
+import { addExpense } from './actions/expenses';
 // import { setTextFilter } from './actions/filters';
 // import getVisibleExpenses from './selectors/expenses';
 import 'normalize.css/normalize.css';
@@ -26,9 +26,9 @@ ReactDOM.render(jsx, document.getElementById('app'));
 //   console.log(visibleExpenses);
 // });
 
-// store.dispatch(addExpense({ description: 'Water Bill', note: 'Feb 2023 - Water Bill', amount: 4500, createdAt: -100000000}));
-// store.dispatch(addExpense({ description: 'Gas Bill', note: 'Feb 2023 - Gas Bill', amount: 0, createdAt: 100000000}));
-// store.dispatch(addExpense({ description: 'Rent', note: 'Feb 2023 - Water Bill', amount: 109500, createdAt: 0}));
+store.dispatch(addExpense({ description: 'Water Bill', note: 'Feb 2023 - Water Bill', amount: 4500, createdAt: -100000000}));
+store.dispatch(addExpense({ description: 'Gas Bill', note: 'Feb 2023 - Gas Bill', amount: 0, createdAt: 100000000}));
+store.dispatch(addExpense({ description: 'Rent', note: 'Feb 2023 - Water Bill', amount: 109500, createdAt: 0}));
 // store.dispatch(setTextFilter('water'));
 // setTimeout(()=> { store.dispatch(setTextFilter('bill')); }, 3000);
 
