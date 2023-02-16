@@ -7,7 +7,7 @@ import Header from '../components/Header';
 export const PriviateRoute = ({ isAuthenticated, component: Component, ...rest }) => (
   <Route {...rest} component={(props) => (
     isAuthenticated ? (
-      <div>
+      <div className="PrivateRoute">
         <Header />
         <Component {...props} />
       </div>
