@@ -11,7 +11,7 @@ const config = {
   measurementId: process.env.FIREBASE_MEASUREMENT_ID
 };
 
-/* firebase-study-react-expensify-2023-add-web
+/* // firebase-study-react-expensify-2023-add-web
 const config = {
   apiKey: "AIzaSyBjdvLt_lsr6cz_Y6WqqZFqBoxmNjMfRCo",
   authDomain: "study-react-expensify-2023.firebaseapp.com",
@@ -21,6 +21,19 @@ const config = {
   messagingSenderId: "953532973814",
   appId: "1:953532973814:web:91390157dcfab805d1a2d7",
   measurementId: "G-CKNW4YDVWK"
+};
+ */
+/* 
+// firebase-study-react-expensify-2023-add-web
+const config = {
+  apiKey: "AIzaSyBfljsIL-5tQFXiR0JeJ3l4J6y_zpfqRDA",
+  authDomain: "study-react-expensify-2023-t.firebaseapp.com",
+  databaseURL: "https://study-react-expensify-2023-t-default-rtdb.firebaseio.com",
+  projectId: "study-react-expensify-2023-t",
+  storageBucket: "study-react-expensify-2023-t.appspot.com",
+  messagingSenderId: "491904600675",
+  appId: "1:491904600675:web:5c7186e7fa18582e908656",
+  measurementId: "G-P3Z27VRK9R"
 };
  */
 
