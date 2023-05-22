@@ -24,7 +24,7 @@ const config = {
 };
  */
 /* 
-// firebase-study-react-expensify-2023-add-web
+// firebase-study-react-expensify-2023-add-web test
 const config = {
   apiKey: "AIzaSyBfljsIL-5tQFXiR0JeJ3l4J6y_zpfqRDA",
   authDomain: "study-react-expensify-2023-t.firebaseapp.com",

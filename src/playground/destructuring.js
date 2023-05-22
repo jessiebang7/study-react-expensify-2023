@@ -30,7 +30,7 @@
 //   console.log(`${temperture} in ${currentCity}`)
 
 
-
+////////// Challenge
 // const book = {
 //   title: 'Ego is the Enemy',
 //   author: 'Ryan Holiday',
@@ -56,6 +56,7 @@
 // const [, , state='NY'] = address;
 // console.log(`You are in ${state}`);
 
+////////// Challenge
 const item = ['Coffee (iced)', '$2.00', '$3.50', '$2.75'];
 const [itemName, , mediumPrice] = item;
 console.log(`A medium ${itemName} costs ${mediumPrice}`)

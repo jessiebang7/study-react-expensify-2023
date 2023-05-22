@@ -17,6 +17,7 @@ module.exports = (env) => {
   const CSSExtract = new ExtractTextPlugin('styles.css' );
 
   return {
+    // entry: './src/playground/redux-expensify.js',
     entry: ['babel-polyfill','./src/app.js'],
     output: {
       path: path.join(__dirname, 'public', 'dist'),

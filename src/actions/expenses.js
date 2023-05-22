@@ -14,11 +14,13 @@ export const startAddExpense = (expenseData = {}) => {
     const expense = { description, note, amount, createdAt };
 
     return database.ref(`users/${uid}/expenses`).push(expense).then((ref) => {
+      // console.log('startAddExpense:', ref.key, ref);
+      
       dispatch(addExpense({
         id: ref.key,
         ...expense
       }));
-      return 'test return'; // jess test
+      // return 'test return'; // jess test
     });
   };
 };

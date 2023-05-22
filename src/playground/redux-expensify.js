@@ -58,6 +58,7 @@ const setEndtDate = (endDate) => ({
 // Expenses Reducer
 const expensesReducerDefaultState = [];
 const expensesReducer = (state=expensesReducerDefaultState, action) => {
+  // console.log('expensesReducer called:', action.type)
   switch(action.type) {
     case 'ADD_EXPENSE':
       return [...state, action.expense];
@@ -81,6 +82,7 @@ const filtersReducerDefaultState = {
   endDate: undefined
 };
 const filtersReducer = (state=filtersReducerDefaultState, action) => {
+  // console.log('filtersReducer called:', action.type)
   switch(action.type) {
     case 'SET_TEXT_FILTER':
       return {...state, text: action.text};
@@ -131,8 +133,8 @@ store.subscribe(() => {
 const expenseOne = store.dispatch(addExpense({description: 'Rent', amount: 100, createdAt: -2000 }));
 const expenseTwo = store.dispatch(addExpense({description: 'Coffee', amount: 300, createdAt: -1000 }));
 
-// store.dispatch(removeExpense( {id: expenseOne.expense.id}));
-// console.log(expenseOne);
+// console.log('expenseOne:', expenseOne);
+// store.dispatch(removeExpense( {id: expenseOne.expense.id }));
 
 // store.dispatch(editExpense(expenseTwo.expense.id, {amount: 500}));
 

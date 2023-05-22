@@ -10,8 +10,8 @@ import {
   startRemoveExpense,
   setExpenses,
   startSetExpenses } from '../../actions/expenses';
-import expenses from '../fixtures/expenses';
 import database from '../../firebase/firebase';
+import expenses from '../fixtures/expenses';
 
 const uid = 'thisismtestuid';
 const defaultAuthState = { auth: { uid } };
@@ -108,7 +108,7 @@ test('should add expense to database and store', (done) => {
   };
 
   store.dispatch(startAddExpense(expenseData)).then((jessTest)=> {
-    console.log(jessTest);
+    console.log('jessTest:', jessTest);
     const actions = store.getActions();
 
     expect(actions[0]).toEqual({

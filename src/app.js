@@ -11,6 +11,7 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
+import './firebase/firebase-practice';
 import LoadingPage from './components/LoadingPage';
 // import './playground/promises';
 

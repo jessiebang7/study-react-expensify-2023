@@ -8,14 +8,14 @@ exports[`should render ExpenseForm correctly 1`] = `
   <Component />
   <input
     autoFocus={true}
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value=""
   />
   <input
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
@@ -121,14 +121,14 @@ exports[`should render ExpenseForm with expense data 1`] = `
   <Component />
   <input
     autoFocus={true}
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value="Rent"
   />
   <input
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
@@ -234,14 +234,14 @@ exports[`should render error for invalid form submssion 1`] = `
   <Component />
   <input
     autoFocus={true}
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value=""
   />
   <input
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
@@ -351,14 +351,14 @@ exports[`should render error for invalid form submssion 2`] = `
   </p>
   <input
     autoFocus={true}
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Description"
     type="text"
     value=""
   />
   <input
-    class="text-input"
+    className="text-input"
     onChange={[Function]}
     placeholder="Amount"
     type="text"
