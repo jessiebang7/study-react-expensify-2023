@@ -23,9 +23,8 @@ test('should render <Header /> correctly', () => {
   // expect(wrapper.find('h1').length).toBe(1);
   // expect(wrapper.find('h1').text()).toBe('Expensify');
 
+    // expect(toJSON(wrapper)).toMatchSnapshot();
   expect(wrapper).toMatchSnapshot();
-
-  // expect(toJSON(wrapper)).toMatchSnapshot();
 });
 
 test('should call startLogout on button click', () => {
