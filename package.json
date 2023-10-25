@@ -6,9 +6,9 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
+    "dev-server": "webpack-dev-server",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
     "test first": "jest",
     "test before env": "jest --config=jest.config.json",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
