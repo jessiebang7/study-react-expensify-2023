@@ -12,5 +12,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log('express server is up on port 3000.');
+  console.log('express server is up!');
 });
