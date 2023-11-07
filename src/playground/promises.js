@@ -20,6 +20,7 @@ const promise = new Promise((resolve, reject) => {
 
 console.log('before');
 
+////////// promise chainning
 // promise.then((data) => {
 //   console.log('1', data);
 //   return 'some data'
@@ -29,6 +30,8 @@ console.log('before');
 //   console.log('error 1', error);
 // });
 
+
+////////// promise chainning
 promise.then((data) => {
   console.log('1', data);
 

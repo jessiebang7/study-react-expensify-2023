@@ -21,35 +21,67 @@ module.exports = (env, argv) => {
 
   return {
     // entry: './src/playground/redux-expensify.js',
+    // entry: './src/app.js',
     entry: ['babel-polyfill','./src/app.js'],
     output: {
       path: path.join(__dirname, 'public', 'dist'),
-      filename: 'bundle.js'
+      filename: 'bundle.js',
+      // publicPath: '/public/dist'
     },
     module: {
-      rules: [{
-        loader: 'babel-loader',
-        test: /\.js$/,
-        exclude: /node_modules/
-      }, {
-        test: /\.s?css$/,
-        use: CSSExtract.extract({
+      rules: [
+        {
+          loader: 'babel-loader',
+          test: /\.js$/,
+          exclude: /node_modules/
+        },
+        {
+          test: /\.s?css$/,
+          use: CSSExtract.extract({
+            use: [
+              {
+                loader: 'css-loader',
+                options: {
+                  sourceMap: true
+                }
+              },
+              {
+                loader: 'sass-loader',
+                options: {
+                  sourceMap: true
+                }
+              }
+            ]
+          })
+        },
+        // {
+        //   test: /\.png$/,
+        //   use: 'file-loader'
+        // }
+        // {
+        //   test: /\.png$/,
+        //   use: [
+        //     {
+        //       loader: 'file-loader',
+        //       options: {esModule: false}
+        //     }
+        //   ]
+        // }
+        {
+          test: /\.(jpe?g|png|gif|svg)$/i,
           use: [
             {
-              loader: 'css-loader',
+              loader: 'file-loader',
               options: {
-                sourceMap: true
+                name: '[name].[ext]',
+                outputPath: '../images/',
+                publicPath: '../images/',
+                esModule: false
               }
-            },
-            {
-              loader: 'sass-loader',
-              options: {
-                sourceMap: true
-              }
-            }            
+            }
           ]
-        })
-      }]
+        }
+      ]
     },
     plugins: [
       CSSExtract,
@@ -68,7 +100,7 @@ module.exports = (env, argv) => {
     devServer: {
       contentBase: path.join(__dirname, 'public'),
       historyApiFallback: true,
-      publicPath: '/dist/'
+      publicPath: '/dist'
     }
   };
 };

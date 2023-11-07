@@ -13,6 +13,9 @@ import * as firebase from 'firebase';
     measurementId: "G-P3Z27VRK9R"
   };
 
+  // firebase.initializeApp(config);
+  // const database = firebase.database();
+
   const practiceApp = firebase.initializeApp(config, 'practice');
   const database = practiceApp.database();
 
